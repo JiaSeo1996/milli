@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Thin.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Thin.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Thin.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Thin.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Thin.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Light.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Light.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Light.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Light.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Light.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Regular.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Regular.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Regular.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Regular.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Regular.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Medium.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Medium.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Medium.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Medium.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Medium.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Bold.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Bold.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Bold.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Bold.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Bold.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "NIXGONEFONTS";
+  font-style: normal;
+  font-weight: 300;
+  src: local("NIXGONEFONTS"), url("../assets/fonts/NIXGONFONTS L 2.0.ttf") format("truetype"), url("../assets/fonts/NIXGONFONTS L 2.0.otf") format("opentype");
+}
+@font-face {
+  font-family: "NIXGONEFONTS";
+  font-style: normal;
+  font-weight: normal;
+  src: local("NIXGONEFONTS"), url("../assets/fonts/NIXGONFONTS M 2.0.ttf") format("truetype"), url("../assets/fonts/NIXGONFONTS M 2.0.otf") format("opentype");
+}
+@font-face {
+  font-family: "NIXGONEFONTS";
+  font-style: normal;
+  font-weight: bold;
+  src: local("NIXGONEFONTS"), url("../assets/fonts/NIXGONFONTS B 2.0.ttf") format("truetype"), url("../assets/fonts/NIXGONFONTS B 2.0.otf") format("opentype");
+}
+#login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#login > .background {
+  height: 100%;
+  flex: 1;
+  background: url("../assets/images/login-01.jpg") no-repeat center/cover;
+}
+#login > form {
+  width: 32.5rem;
+  height: 100%;
+  padding: 5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background: #FFFFFF;
+}
+#login > form > .title {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+#login > form > .title > h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+  line-height: 130%;
+}
+#login > form > .title > p {
+  color: #6F6F6F;
+  line-height: 130%;
+}
+#login > form > .input-wrap {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+#login > form > .input-wrap > label {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 0.0625rem solid #DFDFDF;
+  border-radius: 0.25rem;
+}
+#login > form > .input-wrap > label > p {
+  font-size: 0.625rem;
+  color: #8B8B8B;
+}
+#login > form > .input-wrap > label > input {
+  width: 100%;
+  height: 1.5rem;
+  border: none;
+  outline: none;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 1rem;
+}
+#login > form > .input-wrap > label:focus-within {
+  border-color: #6F6F6F;
+}
+#login > form > .button-login {
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+  background: #FFEB60;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=login.css.map */

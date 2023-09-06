@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="scripts/index-books.js"></script>
+    <script src="scripts/index-objectbook.js" type="text/javascript"></script>
+    <script src="scripts/index-unlimted.js" type="text/javascript"></script>
+    <script src="scripts/index-bestseller.js" type="text/javascript"></script>
+    <script src="scripts/index-content.js"></script>
+    <script src="scripts/index-qna.js"></script>
+    <script src="scripts/scroll.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <title>밀리의 서재</title>
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <div class="header-inner">
+            <a class="link-index" href="index.html">
+                <img src="assets/images/logo-milli.png" alt="밀리의 서재 로고">
+            </a>
+            <nav>
+                <div class="tab-bar">
+                    <a>기업문의</a>
+                    <a>회사소개</a>
+                    <a>계정관리</a>
+                </div>
+                <a class="login" href="login.html">로그인</a>
+            </nav>
+        </div>
+    </header>
+    <a class="floating-button">
+        <b>첫 달 무료</b>로 독서 시작하기
+    </a>
+    <main id="index">
+        <section id="index-intro">
+            <div class="section-inner">
+                <div class="text-wrap">
+                    <h1>당신의 일상을<br>
+                        1밀리+
+                    </h1>
+                    <p>
+                        독서와 무제한 친해지리
+                    </p>
+                </div>
+                <img src="assets/images/index-intro-logo-01.png" alt="밀리의 서재 로고">
+            </div>
+        </section>
+        <section id="index-books">
+            <div class="section-title">
+                <h2>
+                    당신을 기다리는<br>
+                    14만 권의 도서
+                </h2>
+                <p>
+                    첫 달 무료구독을 통해<br>
+                    어떤 도서가 있는지 확인해 보세요
+                </p>
+            </div>
+            <div class="section-inner">
+                <div id="index-books-swiper-1" class="swiper">
+                    <div class="swiper-wrapper"></div>
+                </div>
+                <div dir="rtl" id="index-books-swiper-2" class="swiper">
+                    <div class="swiper-wrapper"></div>
+                </div>
+            </div>
+        </section>
+        <section id="index-objectbook">
+            <div class="section-title">
+                <h2>
+                    나만의 공간을 아름답게<br>
+                    채워주는 오브제북
+                </h2>
+                <p>
+                    이미지와 사운드로 극대화된<br>
+                    책의 감성을 오롯이 느껴보세요
+                </p>
+            </div>
+            <div class="section-inner">
+                <div class="poster">
+                    <video src="assets/videos/index-objectbook-video-01.mp4" poster="assets/images/index-objectbook-illust-01.png" preload="metadata" muted="muted" playsinline></video>
+                    <a class="button-play">
+                        <img src="assets/images/button-play.png" alt="재생 버튼">
+                    </a>
+                </div>
+                <a class="link-objectbook">
+                    <span>오브제북 보러가기</span>
+                    <img src="assets/images/button-angle-right.svg">
+                </a>
+            </div>
+        </section>
+        <section id="index-unlimited">
+            <div class="section-title">
+                <h2>
+                    싹 다 무제한<br>
+                    9,900원
+                </h2>
+                <p>
+                    10년치 베스트셀러<br>
+                    신간 오디오북 장르 소설까지
+                </p>
+            </div>
+            <div class="section-inner">
+                <div class="item-wrap">
+                    <p>지금 서점 베스트 셀러</p>
+                    <div class="list"></div>
+                </div>
+                <div class="item-wrap">
+                    <p>한 달 이내 출간된 책</p>
+                    <div class="list"></div>
+                </div>
+                <div class="item-wrap">
+                    <p>오디오북 BEST</p>
+                    <div class="list"></div>
+                </div>
+            </div>
+        </section>
+        <section id="index-bestseller">
+            <div class="section-title">
+                <h2>
+                    관심 분야에 있는 책도<br>
+                    딱 골라드려요
+                </h2>
+                <p>
+                    검색어 순위를 통해 뽑은<br>
+                    인기 분야 책들을 확인해보세요
+                </p>
+            </div>
+            <div class="section-inner">
+                <ul class="tab-bar">
+                    <li>
+                        <input id="index-bestseller-tab-stock" type="radio" name="index-bestseller-tab" value="stock" checked>
+                        <label for="index-bestseller-tab-stock">주식</label>
+                    </li>
+                    <li>
+                        <input id="index-bestseller-tab-english" type="radio" name="index-bestseller-tab" value="english">
+                        <label for="index-bestseller-tab-english">영어</label>
+                    </li>
+                    <li>
+                        <input id="index-bestseller-tab-classic" type="radio" name="index-bestseller-tab" value="classic">
+                        <label for="index-bestseller-tab-classic">고전</label>
+                    </li>
+                    <li>
+                        <input id="index-bestseller-tab-interior" type="radio" name="index-bestseller-tab" value="interior">
+                        <label for="index-bestseller-tab-interior">인테리어</label>
+                    </li>
+                    <li>
+                        <input id="index-bestseller-tab-diet" type="radio" name="index-bestseller-tab" value="diet">
+                        <label for="index-bestseller-tab-diet">다이어트</label>
+                    </li>
+                </ul>
+                <div id="index-bestseller-list-stock" class="item-wrap"></div>
+                <div id="index-bestseller-list-english" class="item-wrap"></div>
+                <div id="index-bestseller-list-classic" class="item-wrap"></div>
+                <div id="index-bestseller-list-interior" class="item-wrap"></div>
+                <div id="index-bestseller-list-diet" class="item-wrap"></div>
+            </div>
+        </section>
+        <section id="index-reading">
+            <div class="section-title">
+                <h2>
+                    당신이 끝까지 읽을 책을<br>
+                    알려주는 완독지수
+                </h2>
+                <p>
+                    530만 밀리 회원이 먼저 읽고<br>
+                    다 읽을 확률과 예상 시간을 알려드려요
+                </p>
+            </div>
+            <div class="section-inner">
+                <img class="mockup" src="assets/images/index-reading-mockup.png">
+                <img class="tooltip" src="assets/images/index-reading-tooltip.png">
+                <img class="card card-01" src="assets/images/index-reading-card-01.png">
+                <img class="card card-02" src="assets/images/index-reading-card-02.png">
+                <img class="card card-03" src="assets/images/index-reading-card-03.png">
+                <img class="card card-04" src="assets/images/index-reading-card-04.png">
+            </div>
+        </section>
+        <section id="index-price">
+            <div class="section-title">
+                <h2>
+                    언제든 해지 가능!<br>
+                    첫 달 무료로 가볍게
+                </h2>
+                <p>
+                    상황에 맞게 원하는 요금제를<br>
+                    자유롭게 선택하세요
+                </p>
+            </div>
+            <div class="section-inner">
+                <div class="price-wrap">
+                    <p>전자책 정기구독</p>
+                    <div class="price month">
+                        <span>월</span>
+                        <p>9,900<b>원</b></p>
+                    </div>
+                    <div class="price year">
+                        <div class="discount">
+                            <p>118,000</p>
+                            <img src="assets/images/index-price-tag-01.png">
+                        </div>
+                        <span>연</span>
+                        <p>
+                            99,000
+                            <b>원</b>
+                        </p>
+                    </div>
+                    <span>밀리에서 제공하는 콘텐츠를 무제한으로</span>
+                </div>
+                <div class="price-wrap">
+                    <p>종이책 정기구독</p>
+                    <div class="price month">
+                        <span>월</span>
+                        <p>15,900<b>원</b></p>
+                    </div>
+                    <div class="price year">
+                        <div class="discount">
+                            <p>202,800</p>
+                            <img src="assets/images/index-price-tag-02.png">
+                        </div>
+                        <span>연</span>
+                        <p>
+                            183,000
+                            <b>원</b>
+                        </p>
+                    </div>
+                    <span>밀리의 모든 콘텐츠를 무제한으로 보고<br>2달에 1번 종이책+전자책 배송까지</span>
+                </div>
+                <div class="refund-wrap">
+                    <div class="refund">
+                        <img src="assets/images/index-price-refund-01.png">
+                        <p>
+                            무료 체험 기간 동안 해지해도<br>
+                            금액이 청구되지 않아요
+                        </p>
+                    </div>
+                    <div class="refund">
+                        <img src="assets/images/index-price-refund-02.png">
+                        <p>
+                            유료 결제되어도 사용 이력이<br>
+                            없으면 즉시 환불해드려요
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="index-content">
+            <div class="tab-bar">
+                <ul>
+                    <li>
+                        <input id="index-content-tab-audiobook" type="radio" name="index-content-tab" value="audiobook" checked>
+                        <label for="index-content-tab-audiobook">
+                            <img src="assets/images/index-content-icon-01.png">
+                            <span>오디오북</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input id="index-content-tab-viewer" type="radio" name="index-content-tab" value="viewer">
+                        <label for="index-content-tab-viewer">
+                            <img src="assets/images/index-content-icon-02.png">
+                            <span>밀리 뷰어</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-inner">
+                <div id="index-content-audiobook" class="index-content-explain">
+                    <div class="text-wrap">
+                        <div class="section-title">
+                            <img src="assets/images/index-content-icon-03.png">
+                            <h2>오디오북</h2>
+                            <p>
+                                세상에서 가장<br>
+                                교양있는 수면제
+                            </p>
+                        </div>
+                        <div class="swiper-wrap">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <p>
+                                            <b>하루의 시작과 마무리를 오디오북과 함께</b><br>
+                                            지하철에서도, 잠들기 전에도 독서하세요
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>
+                                            <b>귀로 듣다가 눈으로도 같이 보면</b><br>
+                                            더 내용이 잘 이해돼요
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>
+                                            <b>30분만에 책 요약</b><br>
+                                            핵심만 쏙 골라 읽어주는 오디오북
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>
+                                            <b>이제훈부터 옥주현까지</b><br>
+                                            셀럽이 읽어주는 오디오북
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination"></div>
+                        </div>
+                    </div>
+                    <div class="image-wrap">
+                        <img src="assets/images/index-content-swiper-phone.png">
+                        <div class="swiper-wrap">
+                            <div thumbSlider="" class="swiper">
+                                <div class="swiper-wrapper">
+                                    <img class="swiper-slide" src="assets/images/index-content-audiobook-slide-01.png">
+                                    <video class="swiper-slide" src="assets/videos/index-content-audiobook-slide-02.mp4" playsinline preload="metadata" autoplay="autoplay" muted="muted" loop="loop"></video>
+                                    <img class="swiper-slide" src="assets/images/index-content-audiobook-slide-03.png">
+                                    <img class="swiper-slide" src="assets/images/index-content-audiobook-slide-04.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="index-content-viewer" class="index-content-explain">
+                    <div class="text-wrap">
+                        <div class="section-title">
+                            <img src="assets/images/index-content-icon-04.png">
+                            <h2>밀리 뷰어</h2>
+                            <p>
+                                독서를 위한 가장<br>
+                                완벽한 도구
+                            </p>
+                        </div>
+                        <div class="swiper-wrap">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <p>
+                                            <b>시선 추적 기능</b><br>
+                                            눈동자로 페이지를 넘길 수 있어요
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>
+                                            <b>어느 기기에서도 OK</b><br>
+                                            스마트폰, 태블릿, PC, E ink 기기까지
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>
+                                            <b>다크 모드</b><br>
+                                            전자책이 눈 아프다는 편견은 버려요
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p>
+                                            <b>자유로운 보기 설정</b><br>
+                                            줄간격부터 폰트까지 내 마음대로 설정하면<br>
+                                            더욱 편한 독서를 할 수 있어요
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination"></div>
+                        </div>
+                    </div>
+                    <div class="image-wrap">
+                        <img src="assets/images/index-content-swiper-phone.png">
+                        <div class="swiper-wrap">
+                            <div thumbSlider="" class="swiper">
+                                <div class="swiper-wrapper">
+                                    <video class="swiper-slide" src="assets/videos/index-content-viewer-slide-01.mp4" playsinline preload="metadata" autoplay="autoplay" muted="muted" loop="loop"></video>
+                                    <img class="swiper-slide" src="assets/images/index-content-viewer-slide-02.png">
+                                    <video class="swiper-slide" src="assets/videos/index-content-viewer-slide-03.mp4" playsinline preload="metadata" autoplay="autoplay" muted="muted" loop="loop"></video>
+                                    <video class="swiper-slide" src="assets/videos/index-content-viewer-slide-04.mp4" playsinline preload="metadata" autoplay="autoplay" muted="muted" loop="loop"></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="index-review">
+            <div class="section-inner">
+                <div class="item-wrap">
+                    <div class="video">
+                        <iframe width="415" height="415" src="https://www.youtube.com/embed/c-XG8k_w1LM/mqdefault.jpg" title="내돈내산! 밀리 구독 후기" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    </div>
+                    <div class="section-title">
+                        <h2>
+                            내돈내산<br>
+                            밀리 구독 이야기
+                        </h2>
+                        <p>
+                            패션 브랜드 대표부터<br>
+                            고등학교 교사까지!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="index-qna">
+            <div class="section-title">
+                <h2>자주 묻는 질문</h2>
+            </div>
+            <div class="section-inner">
+                <div class="item">
+                    <div class="question">
+                        <p>
+                            안 쓰면 정말 환불해 주나요?
+                        </p>
+                        <img src="assets/images/button-angle-down.png">
+                    </div>
+                    <p class="answer">
+                        물론입니다. 결제 후 콘텐츠 다운로드 및 열람을 하지 않으셨다면 전액 환불해 드리고 있어요.<br>
+                        <b>[밀리 > 관리 > 구독관리 > 결제 내역 확인]</b>에서 직접 환불이 가능하며,<br>
+                        해결이 어려운 경우 고객센터로 문의해 주세요.
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="question">
+                        <p>
+                            구독 중 해지할 수 있나요? 수수료는 없나요?
+                        </p>
+                        <img src="assets/images/button-angle-down.png">
+                    </div>
+                    <p class="answer">
+                        다음달부터 결제되지 않도록 수수료 없이 언제든지 해지하실 수 있습니다.<br>
+                        <b>[밀리 > 관리 > 구독관리 > 자동결제 해지]</b>메뉴를 통해 기간에 상관없이 직접 가능해요.
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="question">
+                        <p>
+                            무료 혜택은 누구나 받을 수 있나요?
+                        </p>
+                        <img src="assets/images/button-angle-down.png">
+                    </div>
+                    <p class="answer">
+                        네, 밀리 회원이라면 누구나 첫 정기구독 신청 시 1회 첫 달 무료 혜택이 제공됩니다.<br>
+                        단, 종이책+전자책 정기구독의 경우 첫 주 무료 혜택만 제공됩니다.<br>
+                        아직 신청하지 않으셨다면 바로 구독신청으로 혜택을 받아보세요.
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="question">
+                        <p>
+                            어떤 기기에서 사용할 수 있나요?
+                        </p>
+                        <img src="assets/images/button-angle-down.png">
+                    </div>
+                    <p class="answer">
+                        아래 기기와 버전에서 밀리를 사용할 수 있습니다.<br>
+                        - 휴대폰 / 태플릿 : iOS13, Android 6 이상 지원<br>
+                        - PC : MAC Yosemite, Window 10 이상 지원<br>
+                        - E ink : Android 4.4 이상 지원<br>
+                        (크레마 그랑데, 크레마 카르타G, 이노스페이스원 공식 판매 기기, 교보 Sam 7.8 등)
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="inner">
+            <p>
+                해당 사이트는 포트폴리오 목적으로 제작되어<br>
+                상업적 이용 목적이 없음을 밝힙니다.
+            </p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+<!--<body>-->
+<!--<div id="wrap">-->
+<!--  <main id="index">-->
+<!--    <section id="books">-->
+<!--      <div class="section-title">-->
+<!--        <h2>-->
+<!--          당신을 기다리는<br>-->
+<!--          14만 권의 도서-->
+<!--        </h2>-->
+<!--        <p>-->
+<!--          첫 달 무료구독을 통해<br>-->
+<!--          어떤 도서가 있는지 확인해 보세요-->
+<!--        </p>-->
+<!--      </div>-->
+<!--      <div id="books-swiper-wrap">-->
+<!--        <div id="books-swiper-1" class="swiper">-->
+<!--          <div class="swiper-wrapper"></div>-->
+<!--        </div>-->
+<!--        <div dir="rtl" id="books-swiper-2" class="swiper">-->
+<!--          <div class="swiper-wrapper"></div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+<!--    <section id="special">-->
+<!--      <div class="section-title">-->
+<!--        <h2>-->
+<!--          싹 다 무제한<br>-->
+<!--          9,900원-->
+<!--        </h2>-->
+<!--        <p>-->
+<!--          10년치 베스트셀러<br>-->
+<!--          신간 오디오북 장르 소설까지-->
+<!--        </p>-->
+<!--      </div>-->
+<!--      <div class="item-wrap">-->

@@ -1,0 +1,17 @@
+@import "preset";
+
+footer {
+  width: 100%;
+  padding-bottom: 3.125rem;
+  border-top: .0625rem solid #DFDFDF;
+  > .inner {
+    width: 90rem;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    > p {
+      font-size: .875rem;
+      font-weight: 500;
+      line-height: 150%;
+    }
+  }
+}

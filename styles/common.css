@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Thin.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Thin.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Thin.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Thin.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Thin.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Light.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Light.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Light.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Light.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Light.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Regular.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Regular.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Regular.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Regular.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Regular.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Medium.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Medium.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Medium.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Medium.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Medium.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Bold.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Bold.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Bold.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Bold.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Bold.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "NIXGONEFONTS";
+  font-style: normal;
+  font-weight: 300;
+  src: local("NIXGONEFONTS"), url("../assets/fonts/NIXGONFONTS L 2.0.ttf") format("truetype"), url("../assets/fonts/NIXGONFONTS L 2.0.otf") format("opentype");
+}
+@font-face {
+  font-family: "NIXGONEFONTS";
+  font-style: normal;
+  font-weight: normal;
+  src: local("NIXGONEFONTS"), url("../assets/fonts/NIXGONFONTS M 2.0.ttf") format("truetype"), url("../assets/fonts/NIXGONFONTS M 2.0.otf") format("opentype");
+}
+@font-face {
+  font-family: "NIXGONEFONTS";
+  font-style: normal;
+  font-weight: bold;
+  src: local("NIXGONEFONTS"), url("../assets/fonts/NIXGONFONTS B 2.0.ttf") format("truetype"), url("../assets/fonts/NIXGONFONTS B 2.0.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 16px;
+  color: #242424;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+#wrap {
+  width: 100%;
+  min-width: 90rem;
+  position: relative;
+}
+#wrap > .floating-button {
+  width: 28.125rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+  position: fixed;
+  right: 0;
+  bottom: 1rem;
+  left: 0;
+  z-index: 9999;
+  border-radius: 5rem;
+  background: #333333;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.16), 0.25rem 0.5rem 1.75rem rgba(0, 0, 0, 0.08);
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*# sourceMappingURL=common.css.map */

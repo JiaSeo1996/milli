@@ -1,0 +1,52 @@
+@import "preset";
+header {
+  width: 100%;
+  height: 4rem;
+  padding: 0 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  border-bottom: .0625rem solid #DFDFDF;
+  background: rgba(255, 255, 255, .9);
+  > .header-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    > .link-index {
+      height: 1.5rem;
+      > img {
+        height: 100%;
+      }
+    }
+    > nav {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.5rem;
+      > .tab-bar {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        > a {
+          height: 100%;
+          padding: 0 1.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      > .login {
+        padding: .4375rem 1.5625rem;
+        border-radius: 5rem;
+        background: #333333;
+        font-size: .75rem;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

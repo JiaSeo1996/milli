@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Thin.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Thin.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Thin.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Thin.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Thin.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Light.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Light.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Light.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Light.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Light.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Regular.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Regular.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Regular.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Regular.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Regular.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Medium.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Medium.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Medium.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Medium.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Medium.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Spoqa Han Sans Neo"), url("../assets/fonts/SpoqaHanSansNeo-Bold.woff2") format("woff2"), url("../assets/fonts/SpoqaHanSansNeo-Bold.woff") format("woff"), url("../assets/fonts/SpoqaHanSansNeo-Bold.ttf") format("truetype"), url("../assets/fonts/SpoqaHanSansNeo-Bold.otf") format("opentype"), url("../assets/fonts/SpoqaHanSansNeo-Bold.eot") format("embeded opentype");
+}
+@font-face {
+  font-family: "NIXGONEFONTS";
+  font-style: normal;
+  font-weight: 300;
+  src: local("NIXGONEFONTS"), url("../assets/fonts/NIXGONFONTS L 2.0.ttf") format("truetype"), url("../assets/fonts/NIXGONFONTS L 2.0.otf") format("opentype");
+}
+@font-face {
+  font-family: "NIXGONEFONTS";
+  font-style: normal;
+  font-weight: normal;
+  src: local("NIXGONEFONTS"), url("../assets/fonts/NIXGONFONTS M 2.0.ttf") format("truetype"), url("../assets/fonts/NIXGONFONTS M 2.0.otf") format("opentype");
+}
+@font-face {
+  font-family: "NIXGONEFONTS";
+  font-style: normal;
+  font-weight: bold;
+  src: local("NIXGONEFONTS"), url("../assets/fonts/NIXGONFONTS B 2.0.ttf") format("truetype"), url("../assets/fonts/NIXGONFONTS B 2.0.otf") format("opentype");
+}
+header {
+  width: 100%;
+  height: 4rem;
+  padding: 0 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  border-bottom: 0.0625rem solid #DFDFDF;
+  background: rgba(255, 255, 255, 0.9);
+}
+header > .header-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header > .header-inner > .link-index {
+  height: 1.5rem;
+}
+header > .header-inner > .link-index > img {
+  height: 100%;
+}
+header > .header-inner > nav {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+header > .header-inner > nav > .tab-bar {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header > .header-inner > nav > .tab-bar > a {
+  height: 100%;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > .header-inner > nav > .login {
+  padding: 0.4375rem 1.5625rem;
+  border-radius: 5rem;
+  background: #333333;
+  font-size: 0.75rem;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=header.css.map */
